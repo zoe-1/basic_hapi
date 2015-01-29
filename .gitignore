@@ -1,0 +1,10 @@
+!.gitkeep
+node_modules/
+tmp
+*~
+*.swp
+*.swo
+*.swp~
+*.swo~
+npm-debug.log
+

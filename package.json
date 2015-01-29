@@ -1,0 +1,19 @@
+{
+  "name": "basic_hapi",
+  "version": "0.0.1",
+  "description": "Basic hapijs application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoe-1/basic_hapi.git"
+  },
+  "author": "Jon Swenson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoe-1/basic_hapi/issues"
+  },
+  "homepage": "https://github.com/zoe-1/basic_hapi"
+}
