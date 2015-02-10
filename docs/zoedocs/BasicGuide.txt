@@ -1,0 +1,61 @@
+{CONTENTS}
+
+[BasicGuide]
+
+Introduction
+A basic guide to starting, configuring, and developing hapijs applications.
+Each step of the process is a commit in the git repository allowing you
+to check out and view the code state at each step. 
+
+Navigating the Guide 
+This guide used zoetags to make ctags vim navigation through the project. 
+Sorry no emacs ctags support here.  
+
+-----------------------------------------------------------------------------
+Contents
+-----------------------------------------------------------------------------
+Lesson-1  Basics hapijs modular structure
+
+
+
+
+title 			Lesson-1  Develop a basic hapijs application.
+checkout 		Lesson-1  
+commit 		  24a23dcc48a635c44ce17c02e4985e6eed7f531e      
+description
+	Basic hapijs application that has two plugins each with one router.
+	Illustrates hapijs modular organization.  There are two plugins in 
+	the application. Plugin "one" contains the web servers index route. 
+	And, plugin "two" contains a route to a sub domain named "boom". 
+	There is one path in the subdomain which is index.
+
+	Additionally, this application builds two nodejs servers. 
+	One, is to be web server and is called "web".  The other is to
+	be a web service api and is called "api". This shows the unique power
+	hapijs / nodejs offers the developer. 
+
+	This is the cleanest modular structure I have ever seen for
+	creating web applications and web apis. After you develop this 
+	basic hapijs server I believe you will agree.  
+
+project tree
+	index.js 			-- 	start up servers web and api	
+										This application has a web server and api.
+	plugins-web		--  plugins to be used on web server stored here.
+	plugins-api		--  plugins to be use on webserver api stored here.
+	
+	STRUCTURE
+	plugins-web/ 								-- Directory to contain all web application plugins.
+	plugins-web/registry.js			-- Configures all plugins in plugins-web directory
+																 to be loaded into the web server. 
+																 Plus, this module also has function to register
+																 the plugins.
+																 WPlugins.registry = json object registry list of plugins.
+																 WPlugins.register = register all plugins in registry.
+																 @todo add authentication strategies to routes.
+																 
+	plugins-web/one/one.js		  -- Displays the index page of the site.
+																 other routes to be added later.
+	plugins-web/two/two.js		  -- A plugin that is subdomain of the site.
+																 boom.localhost is the subdomain.
+							
