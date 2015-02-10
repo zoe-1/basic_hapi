@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Hapi	./index.js	/^var Hapi = require('hapi');$/;"	v
+Good	./index.js	/^var Good = require('good');$/;"	v
+WPlugins	./index.js	/^var WPlugins = require('.\/plugins-web\/registry.js');$/;"	v
+exports.register	./plugins-web/one/index.js	/^exports.register = function(server,options,next){$/;"	f
+exports.register.attributes.name	./plugins-web/one/index.js	/^	name:'one',$/;"	p
+exports.register.attributes.version	./plugins-web/one/index.js	/^	version:'0.0.1',$/;"	p
+exports.register.attributes.pkg	./plugins-web/one/index.js	/^	pkg:require('.\/package.json')$/;"	p
+Bcrypt	./plugins-web/one/one.js	/^var Bcrypt = require('bcrypt');$/;"	v
+Basic	./plugins-web/one/one.js	/^var Basic = require('hapi-auth-basic');$/;"	v
+exports.register	./plugins-web/one/one.js	/^exports.register = function(server,options,next){$/;"	f
+exports.register.attributes.name	./plugins-web/one/one.js	/^	name:'one',$/;"	p
+exports.register.attributes.version	./plugins-web/one/one.js	/^	version:'0.0.1',$/;"	p
+exports.register.attributes.pkg	./plugins-web/one/one.js	/^	pkg:require('.\/package.json')$/;"	p
+Bcrypt	./plugins-web/registry.js	/^var Bcrypt = require('bcrypt');$/;"	v
+Basic	./plugins-web/registry.js	/^var Basic = require('hapi-auth-basic');$/;"	v
+WPlugins.register	./plugins-web/registry.js	/^WPlugins.register = function(server) {$/;"	f
+exports.register	./plugins-web/two/two.js	/^exports.register = function(server,options,next){$/;"	f
+exports.register.attributes.name	./plugins-web/two/two.js	/^	name:'two',$/;"	p
+exports.register.attributes.version	./plugins-web/two/two.js	/^	version:'0.0.1',$/;"	p
+exports.register.attributes.pkg	./plugins-web/two/two.js	/^	pkg:require('.\/package.json')$/;"	p
+CONTENTS	./BasicGuide.txt	/[CONTENTS]/;"zoetag
+BasicGuide	./docs/zoedocs/BasicGuide.txt	/[BasicGuide]/;"zoetag

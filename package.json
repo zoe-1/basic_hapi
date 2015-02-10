@@ -2,7 +2,7 @@
   "name": "basic_hapi",
   "version": "0.0.1",
   "description": "Basic hapijs application.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/zoe-1/basic_hapi/issues"
   },
-  "homepage": "https://github.com/zoe-1/basic_hapi"
+  "homepage": "https://github.com/zoe-1/basic_hapi",
+  "dependencies": {
+    "bcrypt": "^0.8.1",
+    "good": "^5.1.1",
+    "good-console": "^4.1.0",
+    "hapi": "^8.2.0",
+    "hapi-auth-basic": "^2.0.0"
+  }
 }

@@ -1,0 +1,8 @@
+{
+	"name":"one",
+  "version":"0.0.1",
+	"description":"hapi plugin example",
+  "main":"one.js",
+  "author":"Jon Swenson",
+  "license":"MIT"
+}

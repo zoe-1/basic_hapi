@@ -1,0 +1,8 @@
+{
+	"name":"two",
+  "version":"0.0.1",
+	"description":"hapi plugin example",
+  "main":"two.js",
+  "author":"Jon Swenson",
+  "license":"MIT"
+}
