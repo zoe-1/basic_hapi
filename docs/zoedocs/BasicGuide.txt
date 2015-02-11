@@ -27,9 +27,7 @@ description
 	Illustrates hapijs modular organization.  There are two plugins in 
 	the application. Plugin "one" contains the web servers index route. 
 	And, plugin "two" contains a route to a sub domain named "boom". 
-	There is one path in the subdomain which is index.
-
-	Additionally, this application builds two nodejs servers. 
+	There is one path in the subdomain which is index.  Additionally, this application builds two nodejs servers. 
 	One, is to be web server and is called "web".  The other is to
 	be a web service api and is called "api". This shows the unique power
 	hapijs / nodejs offers the developer. 
@@ -59,3 +57,41 @@ project tree
 	plugins-web/two/two.js		  -- A plugin that is subdomain of the site.
 																 boom.localhost is the subdomain.
 							
+<<<<<<< HEAD
+=======
+
+
+
+title 			Lesson-2 Configure tls on api and webserver.
+zoetag			[lesson_2]
+description
+	Web application and api have tls requirements. 
+	1. Generate security_certificate 
+	{GenerateSelfCert}
+	https://devcenter.heroku.com/articles/ssl-certificate-self
+	2. Load tls certs into configuration options.
+	Make configuration file to store settings. 
+	Put tls certs into configurations.
+	3. Configure servers that use ssl to use tls options.
+	4. Create api plugin using tls protocol named "base" to serve data  
+     response when requested.
+		 ./plugins-api/base
+		 
+
+	SOURCES: 
+ 		http://security.stackexchange.com/questions/5126/whats-the-difference-between-ssl-tls-and-https
+		ssl vs tls
+
+		http://nodejs.org/api/tls.html
+		Docs on how node.js configures tls. 
+		Their openssl example has problems.
+
+		https://github.com/npm/newww/blob/master/config.js
+		See how npm uses self signed tls.
+
+		https://devcenter.heroku.com/articles/ssl-certificate-self
+		Good example of creating self signed cert.
+
+		http://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
+		node.js create server docs.
+>>>>>>> 87f0b32... Lesson-2 Configure tls on api and webserver.

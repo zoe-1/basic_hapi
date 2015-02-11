@@ -24,5 +24,7 @@ exports.register	./plugins-web/two/two.js	/^exports.register = function(server,o
 exports.register.attributes.name	./plugins-web/two/two.js	/^	name:'two',$/;"	p
 exports.register.attributes.version	./plugins-web/two/two.js	/^	version:'0.0.1',$/;"	p
 exports.register.attributes.pkg	./plugins-web/two/two.js	/^	pkg:require('.\/package.json')$/;"	p
-CONTENTS	./BasicGuide.txt	/[CONTENTS]/;"zoetag
+CONTENTS	./CONTENTS.txt	/[CONTENTS]/;"zoetag
 BasicGuide	./docs/zoedocs/BasicGuide.txt	/[BasicGuide]/;"zoetag
+lesson_2	./docs/zoedocs/BasicGuide.txt	/[lesson_2]/;"zoetag
+GenerateSelfCert	./docs/zoedocs/howtos/generate_self_cert.txt	/[GenerateSelfCert]/;"zoetag
