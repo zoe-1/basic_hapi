@@ -22,13 +22,13 @@ Lesson-3  Refactor configuration settings.
 
 title 			Lesson-1  Develop a basic hapijs application.
 checkout 		Lesson-1  
-commit 		  c08f7635a619622daf23937e5f7c4279912361b5      
 description
 	Basic hapijs application that has two plugins each with one router.
 	Illustrates hapijs modular organization.  There are two plugins in 
 	the application. Plugin "one" contains the web servers index route. 
 	And, plugin "two" contains a route to a sub domain named "boom". 
-	There is one path in the subdomain which is index.  Additionally, this application builds two nodejs servers. 
+	There is one path in the subdomain which is index.  
+	Additionally, this application builds two nodejs servers. 
 	One, is to be web server and is called "web".  The other is to
 	be a web service api and is called "api". This shows the unique power
 	hapijs / nodejs offers the developer. 
@@ -58,7 +58,6 @@ project tree
 	plugins-web/two/two.js		  -- A plugin that is subdomain of the site.
 																 boom.localhost is the subdomain.
 							
-
 
 
 title 			Lesson-2 Configure tls on api and webserver.

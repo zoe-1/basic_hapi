@@ -40,7 +40,6 @@ server.connection({
 WPlugins.register(server);
 APlugins.register(server);
 
-
 /*
  * LOAD console reporting
  */
