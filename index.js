@@ -4,27 +4,13 @@ var Hapi = require('hapi');
 var Good = require('good');
 var WPlugins = require('./plugins-web/registry.js');
 var APlugins = require('./plugins-api/registry.js');
+var config = require('./config.js');
 
 var fs = require('fs');
 
 var internals = {};
 var server = new Hapi.Server();
 
-/*
- * CONFIGURE tsl certs 
- * tsl Transport Security Layer (ssl3.1)
- */
-
-var options = {
-   key: fs.readFileSync('./lib/certs/key.pem'),
-   cert: fs.readFileSync('./lib/certs/server.crt'),
-
-   // This is necessary only if using the client certificate authentication.
-   requestCert: true,
-
-   // This is necessary only if the client uses the self-signed certificate.
-   ca: [fs.readFileSync('./lib/certs/server.crt')]
-};
 
 /*
  * CONFIGURE servers and connections
@@ -35,16 +21,16 @@ server.connection({
    port: 8000
 });
 server.connection({
-   labels: 'web-ssl',
+   labels: 'web-tls',
    host: 'localhost',
    port: 8001,
-   tls: options  // tls options loaded here.
+   tls: config.tls  // tls options loaded here.
 });
 server.connection({
    labels: 'api',
    host: 'localhost',
    port: 8002,
-   tls: options
+   tls: config.tls
 });
 
 

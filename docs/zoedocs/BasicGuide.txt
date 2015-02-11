@@ -15,7 +15,8 @@ Sorry no emacs ctags support here.
 Contents
 -----------------------------------------------------------------------------
 Lesson-1  Basics hapijs modular structure
-
+Lesson-2  Configure tls on api and webserver.
+Lesson-3  Refactor configuration settings. 
 
 
 
@@ -57,8 +58,6 @@ project tree
 	plugins-web/two/two.js		  -- A plugin that is subdomain of the site.
 																 boom.localhost is the subdomain.
 							
-<<<<<<< HEAD
-=======
 
 
 
@@ -94,4 +93,15 @@ description
 
 		http://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
 		node.js create server docs.
->>>>>>> 87f0b32... Lesson-2 Configure tls on api and webserver.
+
+
+title 	Lesson-3  Refactor configuration settings. 
+zoetag [lesson_3]
+description
+		The tsl transport security layer is configured and working.  
+		However, our index.js file is messy and needs refactoring.  
+		Refactor plan:
+		1. Put tsl configurations into server configurations file.
+			 ./config.js
+		2. Load these configurations in the server.connection functions
+			 rather than hard coding the configurations.

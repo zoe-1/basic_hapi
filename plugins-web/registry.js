@@ -19,7 +19,7 @@ WPlugins.registry = [
          register: require('./one')
       },
       1: {
-         select: ['web','web-ssl'],
+         select: ['web','web-tls'],
       },
       2: function(err) {
          if (err) {
@@ -35,7 +35,7 @@ WPlugins.registry = [
          register: require('./two')
       },
       1: {
-         select: ['web','web-ssl'],
+         select: ['web','web-tls'],
          routes: {
             vhost: "boom.localhost",
          }
