@@ -17,6 +17,7 @@ Contents
 Lesson-1  Basics hapijs modular structure
 Lesson-2  Configure tls on api and webserver.
 Lesson-3  Refactor configuration settings. 
+Lesson-4  Adding hapijs views.
 
 
 
@@ -104,3 +105,14 @@ description
 			 ./config.js
 		2. Load these configurations in the server.connection functions
 			 rather than hard coding the configurations.
+
+
+title 	Lesson-4  Adding hapijs views. 
+zoetag [lesson_4]
+description
+		Configure plugin to have a prefix: './three'.
+		Configure plugin to use handlebars, html views, and templates.
+		Note: prefixes also work on subdomains 
+		unless the subdomain has the same path then
+		the subdomain's path will be executed. 
+	 

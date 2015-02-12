@@ -45,6 +45,29 @@ WPlugins.registry = [
             console.log('web-plugins/two load error');
          }
       }
+   },
+   /*
+    * plugins-web/three
+    */
+   {
+      0: {
+         register: require('../plugins-web/three')
+      },
+      1: {
+         select: ['web','web-tls'],
+         routes: {
+            prefix: '/three',
+						/* note: prefixes also work on subdomains 
+						 * unless the subdomain has the same path then
+						 * the subdomain's path will be executed. 
+						 */
+         }
+      },
+      2: function(err) {
+         if (err) {
+            console.log('web-plugins/three load error');
+         }
+      }
    }
 ];
 

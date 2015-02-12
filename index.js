@@ -6,8 +6,6 @@ var WPlugins = require('./plugins-web/registry.js');
 var APlugins = require('./plugins-api/registry.js');
 var config = require('./config.js');
 
-var fs = require('fs');
-
 var internals = {};
 var server = new Hapi.Server();
 
