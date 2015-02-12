@@ -11,9 +11,9 @@ exports.register = function(server, options, next) {
    });
 
 
-	 /*
-		* CONFIG STATIC FILES INCLUDE 
-		*/
+   /*
+    * CONFIG STATIC FILES INCLUDE
+    */
    server.route({
       method: 'GET',
       path: '/{param*}',
