@@ -1,0 +1,25 @@
+{
+  "name": "basic_hapi",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zoe-1/basic_hapi",
+  "authors": [
+    "Jon Swenson <jswenson74@gmail.com>"
+  ],
+  "description": "basic_hapi application using bower.",
+  "keywords": [
+    "basic_hapi"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

@@ -29,3 +29,4 @@ BasicGuide	./docs/zoedocs/BasicGuide.txt	/[BasicGuide]/;"zoetag
 lesson_2	./docs/zoedocs/BasicGuide.txt	/[lesson_2]/;"zoetag
 GenerateSelfCert	./docs/zoedocs/howtos/generate_self_cert.txt	/[GenerateSelfCert]/;"zoetag
 ToDos	./docs/zoedocs/ToDos.txt	/[ToDos]/;"zoetag
+lesson_5	./docs/zoedocs/BasicGuide.txt	/[lesson_5]/;"zoetag
