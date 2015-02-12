@@ -7,4 +7,5 @@ tmp
 *.swp~
 *.swo~
 npm-debug.log
+public/bower_components/jquery/src/
 

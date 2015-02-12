@@ -116,3 +116,27 @@ description
 		unless the subdomain has the same path then
 		the subdomain's path will be executed. 
 	 
+
+title 	Lesson-5  Including static files (js/css) & bower install 
+zoetag [lesson_5]
+description
+	In plugins/web/three/three.js configured include static files settings. 
+	The view at plugins/web/three/views/html5.html includes
+	the static css file ./public/assets/styles.css.
+
+	Install bower globally.
+	npm install bower -g
+	configured .bowerrc to install bower componentes at:
+	./public/bower_components
+	View .bowerrc for example. 
+	bower install jquery --save
+	Installs jquery in public/bower_components directory. 
+	Now, the project is configured to easily add angular to it. 
+
+	Include jQuery and your own Javacript pages example at:
+	plugins/web/three/views/html5.html. 
+	This page includes jQuery from: ./public/bower_components/jquery/dist/.
+	Plus, plugins/web/three/views/html5.html includes assets/js/html5.js script
+	file and prints to console when the page is ready. This illustrates loading
+	your own JavaScript files. 
+

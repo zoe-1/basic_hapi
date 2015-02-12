@@ -1,7 +1,17 @@
 [CONTENTS] 
 
 
-{ToDos}
+basic_hapi
+
+
+Project illustrates basics of hapijs (http://hapijs.com).
+To navigate we use vim and ctags.  For example, ctrl+] on top of tags inside
+{ .... } tags and you will jump to the appropriate page. ctrl+o to jump backwards. 
+
+
 {BasicGuide}
 	Step by step process of developing happijs application.
+
+
+{ToDos}
 
